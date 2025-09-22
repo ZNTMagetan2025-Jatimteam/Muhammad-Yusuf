@@ -1330,7 +1330,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var title  = (layer.get && layer.get('title')) || '';
     var isBase =
       (layer.get && layer.get('type') === 'base') ||                            // QGIS2Web base
-      /(^|\b)(base|basemap|osm|bing|google|carto|stamen)\b/i.test(title) ||     // judul umum basemap
+      /(^|\b)(base|basemap|bing|google|carto|stamen)\b/i.test(title) ||     // judul umum basemap
       (layer.getSource && (
         layer.getSource() instanceof ol.source.OSM ||
         layer.getSource() instanceof ol.source.BingMaps ||
